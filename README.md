@@ -27,9 +27,6 @@ video-conference-app/
 │ └── main.js # Core JavaScript (Agora + DOM logic)
 └── README.md # Project documentation
 
-markdown
-Copy
-Edit
 
 ## ⚙️ How It Works
 
@@ -49,27 +46,24 @@ Edit
 ## 🔧 Setup and Usage
 
 1. **Clone the Repository**
-   ```bash
+   ```
    git clone https://github.com/your-username/video-conference-app.git
    cd video-conference-app
-Serve the App
+
+**Serve the App**
 Use a local server (e.g., VS Code Live Server or Python)
 
-bash
-Copy
-Edit
+'''
 # Python 3
 python -m http.server
+
 Configure AgoraRTC
 Replace the placeholders in main.js:
-
-javascript
-Copy
-Edit
 const APP_ID = "YOUR_APP_ID";
 const TOKEN = "YOUR_TEMP_TOKEN";
 const CHANNEL = "YOUR_CHANNEL_NAME";
-Test the App
+
+**Test the App**
 
 Open in multiple browser tabs/devices.
 
@@ -77,11 +71,10 @@ Click "Join Stream" to enter the call.
 
 Use mic/camera toggle and "Leave Stream" to exit.
 
-🧩 Example Code Snippets
-📄 HTML (index.html)
-html
-Copy
-Edit
+
+**🧩 Example Code Snippets
+📄 HTML (index.html)**
+
 <div id="video-streams"></div>
 <div id="controls">
   <button id="join-btn">Join Stream</button>
@@ -89,10 +82,9 @@ Edit
   <button id="mic-btn">Mic On</button>
   <button id="camera-btn">Camera On</button>
 </div>
-🎨 CSS (styles.css)
-css
-Copy
-Edit
+
+**🎨 CSS (styles.css)**
+
 #video-streams {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -108,10 +100,9 @@ Edit
 .video-container:hover {
   transform: scale(1.05);
 }
+
 ⚙️ JavaScript (main.js)
-javascript
-Copy
-Edit
+
 const client = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
 let localTracks = [];
 
@@ -133,8 +124,9 @@ async function joinAndDisplayLocalStream() {
   localTracks[1].play(`user-${UID}`);
   await client.publish(localTracks);
 }
-🌟 Future Improvements
-Add user authentication
+
+**🌟 Future Improvements**
+**Add user authentication**
 
 Implement screen sharing
 
@@ -144,17 +136,11 @@ Improve error handling for network/SDK issues
 
 UI themes and animations
 
-📸 Screenshots
-Add screenshots here showing the dark UI, responsive grid layout, and control panel.
-
-🔗 Live Demo
-Host the app using GitHub Pages, Netlify, or Vercel and include the link here.
-
-⚠️ Notes
+**⚠️ Notes**
 Replace your Agora credentials (APP_ID, TOKEN, and CHANNEL) in the code.
 
 Never commit private keys or tokens to the repository.
 
-📄 License
+**📄 License**
 This project is licensed under the MIT License.
 
