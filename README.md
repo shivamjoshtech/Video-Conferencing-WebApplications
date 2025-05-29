@@ -79,13 +79,13 @@ python -m http.server
 **🌟 Future Improvements**
 **Add user authentication**
 
-Implement screen sharing
+- **Implement screen sharing
 
-Add real-time chat during the call
+- **Add real-time chat during the call
 
-Improve error handling for network/SDK issues
+- **Improve error handling for network/SDK issues
 
-UI themes and animations
+- **UI themes and animations
 
 **⚠️ Notes**
 Replace your Agora credentials (APP_ID, TOKEN, and CHANNEL) in the code.
