@@ -58,7 +58,7 @@ video-conference-app/
 **Serve the App**
 Use a local server (e.g., VS Code Live Server or Python)
 
-'''
+
 # Python 3
 python -m http.server
 
